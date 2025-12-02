@@ -1,5 +1,7 @@
 # Day 01: TypeScriptで作るMarkdownプレビューア
 
+🌐 [English](./README.en.md)
+
 Advent Calendar 2025 - 1日目の記事です。
 
 ## 概要
