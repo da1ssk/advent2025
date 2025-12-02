@@ -4,10 +4,11 @@
     "marked": "^17.0.1",
     "typescript": "^5.9.3"
   },
-  "name": "01",
+  "name": "markdown-previewer-day01",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

@@ -6,9 +6,7 @@ Advent Calendar 2025 - 1日目の記事です。
 
 TypeScriptを使って、リアルタイムでMarkdownをプレビューできるシンプルなWebアプリを作成しました。入力したMarkdownがその場でHTMLに変換され、プレビューエリアに表示されます。
 
-## デモ
-
-![Markdownプレビューア](https://via.placeholder.com/800x400?text=Markdown+Previewer+Screenshot)
+[Markdownプレビューア](https://markdown-previewer-day01.vercel.app/)
 
 ## 使用技術
 
@@ -20,6 +18,7 @@ TypeScriptを使って、リアルタイムでMarkdownをプレビューでき�
 
 - **Google Gemini** - 初期コードの生成
 - **Cursor + Claude Opus 4.5** - コードのリファインメント・デバッグ
+- **Vercel** - デプロイ・ホスティング
 
 ## ディレクトリ構成
 
@@ -84,6 +83,26 @@ const renderMarkdown = async (): Promise<void> => {
   outputElement.innerHTML = htmlOutput
 }
 ```
+
+## デプロイ
+
+Vercelを使用してデプロイしています。
+
+```bash
+# Vercel CLIでデプロイ
+npx vercel --prod
+```
+
+`vercel.json`で出力ディレクトリを設定：
+
+```json
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": "."
+}
+```
+
+**本番URL:** https://markdown-previewer-day01.vercel.app
 
 ## 注意点
 
