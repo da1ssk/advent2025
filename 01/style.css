@@ -1,0 +1,70 @@
+html, body {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f4f7f6;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+#app-container {
+    display: flex;
+    flex: 1;
+    min-height: 0;
+}
+
+#markdown-input, #preview-output {
+    flex: 1;
+    padding: 15px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    border: none;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+#markdown-input {
+    background-color: #fff;
+    border-right: 1px solid #ccc;
+    font-family: 'Courier New', Courier, monospace; /* 入力しやすいフォント */
+    resize: none; /* サイズ変更を不可にする */
+}
+
+#preview-output {
+    background-color: #e8eded;
+}
+
+/* プレビュー内のMarkdown要素のスタイル調整 */
+#preview-output h1 {
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+}
+
+#preview-output pre {
+    background-color: #2d2d2d;
+    color: #f8f8f2;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+}
+
+footer {
+    background-color: #333;
+    color: #888;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    flex-shrink: 0;
+}

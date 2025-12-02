@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 01: Markdown プレビューア (TS)</title>
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+
+<body>
+  <div class="header">
+    <h1>Markdown プレビューア</h1>
+  </div>
+
+  <div id="app-container">
+    <textarea id="markdown-input" placeholder="# Markdownを入力..."># TypeScriptで作るMarkdownプレビューア
+
+- リスト 1
+- リスト 2
+
+コードブロック:
+```typescript
+const isWorking: boolean = true;
+```
+
+インラインコード: `console.log("Hello, World!");`
+
+**動作確認OK!**
+
+</textarea>
+
+    <div id="preview-output">
+    </div>
+  </div>
+
+  <footer>
+    Created by Kakumei 2025
+  </footer>
+
+  <script type="module" src="dist/script.js"></script>
+</body>
+
+</html>
