@@ -11,7 +11,7 @@
 | Day | タイトル | 技術スタック | デモ | 記事 |
 |-----|---------|-------------|------|------|
 | 01 | [Markdownプレビューア](./01/) | TypeScript, marked, HTML/CSS | [🔗 Live](https://markdown-previewer-day01.vercel.app/) | [📝 Qiita](https://qiita.com/da1ssk/items/acd731284c829d3256ac) |
-| 02 | [ゴルフスイングシミュレーター](./02/) | TypeScript, Canvas, Lagrangian力学 | [🔗 Live](https://golf-swing-simulator-day02.vercel.app/) | - |
+| 02 | [ゴルフスイングシミュレーター](./02/) | TypeScript, Canvas, Lagrangian力学 | [🔗 Live](https://golf-swing-simulator-day02.vercel.app/) | [📝 Qiita](https://qiita.com/da1ssk/items/fbb9be70edfaab6d9aeb) |
 
 ---
 

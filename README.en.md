@@ -11,7 +11,7 @@ A record of my challenge to build a web app every day until the end of the year,
 | Day | Title | Tech Stack | Demo | Article |
 |-----|-------|------------|------|---------|
 | 01 | [Markdown Previewer](./01/) | TypeScript, marked, HTML/CSS | [🔗 Live](https://markdown-previewer-day01.vercel.app/) | [📝 Qiita](https://qiita.com/da1ssk/items/acd731284c829d3256ac) |
-| 02 | [Golf Swing Simulator](./02/) | TypeScript, Canvas, Lagrangian Mechanics | [🔗 Live](https://golf-swing-simulator-day02.vercel.app/) | - |
+| 02 | [Golf Swing Simulator](./02/) | TypeScript, Canvas, Lagrangian Mechanics | [🔗 Live](https://golf-swing-simulator-day02.vercel.app/) | [📝 Qiita](https://qiita.com/da1ssk/items/fbb9be70edfaab6d9aeb) |
 
 ---
 
