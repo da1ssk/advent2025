@@ -8,6 +8,8 @@ Advent Calendar 2025 - Day 2 article.
 
 I created a web app that physically simulates a golf swing using TypeScript. It uses a double pendulum model (2 degrees of freedom: shoulder and wrist) and simulates swing motion through torque control. It handles ball impact, distance calculation, and trajectory visualization.
 
+https://github.com/user-attachments/assets/d3fd6002-2208-4287-b4e5-d09c3cef978c
+
 ## Tech Stack
 
 - **TypeScript** - Type-safe JavaScript
