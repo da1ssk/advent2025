@@ -8,6 +8,8 @@ Advent Calendar 2025 - 2日目の記事です。
 
 TypeScriptを使って、ゴルフスイングを物理シミュレーションするWebアプリを作成しました。二重振り子モデル（肩と手首の2自由度）を使用し、トルク制御によるスイング動作をシミュレートします。ボールへのインパクト、飛距離計算、軌道表示まで対応しています。
 
+https://github.com/user-attachments/assets/d3fd6002-2208-4287-b4e5-d09c3cef978c
+
 ## 使用技術
 
 - **TypeScript** - 型安全なJavaScript
