@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Golf Swing Simulator (2-DOF)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>⛳ Golf Swing Simulator</h1>
+
+    <div class="main-layout">
+      <!-- Left: Controls -->
+      <div class="controls-panel">
+        <div class="control-group">
+          <h3>🎮 手動調整</h3>
+
+          <label>肩トルク (Nm): <input type="range" id="t1_mag" min="30" max="150" value="70"><span
+              id="val_t1_mag">70</span></label>
+          <label>肩 持続時間 (s): <input type="range" id="t1_dur" min="0.2" max="0.5" step="0.01" value="0.35"><span
+              id="val_t1_dur">0.35</span></label>
+
+          <hr>
+
+          <label>手首トルク (Nm): <input type="range" id="t2_mag" min="-50" max="80" value="20"><span
+              id="val_t2_mag">20</span></label>
+          <label>手首 ディレイ (s): <input type="range" id="t2_delay" min="0" max="0.35" step="0.01" value="0.1"><span
+              id="val_t2_delay">0.1</span></label>
+          <label>手首 持続時間 (s): <input type="range" id="t2_dur" min="0.05" max="0.3" step="0.01" value="0.15"><span
+              id="val_t2_dur">0.15</span></label>
+
+          <button id="btnSimulate">▶ スイング実行</button>
+        </div>
+
+        <div class="control-group">
+          <h3>🔍 最適化</h3>
+          <button id="btnOptimize" class="secondary">⚡ 最適化開始</button>
+          <div id="logArea"></div>
+        </div>
+      </div>
+
+      <!-- Center: Simulator -->
+      <div class="canvas-container">
+        <canvas id="simCanvas" width="1000" height="550"></canvas>
+        <div id="stats">
+          Head Speed: <span id="speedDisplay">0.0</span> m/s
+        </div>
+        <div class="phase-control">
+          <label>🎬 Phase: <input type="range" id="phaseSlider" min="0" max="100" value="0">
+            <span id="val_phaseSlider">0%</span></label>
+        </div>
+      </div>
+
+      <!-- Right: Parameters -->
+      <div class="params-panel">
+        <h3>📊 パラメータ</h3>
+
+        <div class="param-section">
+          <h4>物理定数</h4>
+          <div class="param-row"><span>重力 G</span><span>9.81 m/s²</span></div>
+          <div class="param-row"><span>腕長 L1</span><span>0.55 m</span></div>
+          <div class="param-row"><span>クラブ長 L2</span><span>0.95 m</span></div>
+          <div class="param-row"><span>腕質量 M1</span><span>4.5 kg</span></div>
+          <div class="param-row"><span>クラブ質量 M2</span><span>0.35 kg</span></div>
+        </div>
+
+        <div class="param-section">
+          <h4>ボール</h4>
+          <div class="param-row"><span>反発係数 COR</span><span>0.78</span></div>
+          <div class="param-row"><span>ボール質量</span><span>45.9 g</span></div>
+          <div class="param-row"><span>ロフト角</span><span>34°</span></div>
+        </div>
+
+        <div class="param-section">
+          <h4>関節制約</h4>
+          <div class="param-row"><span>手首ラグ max</span><span>90°</span></div>
+          <div class="param-row"><span>手首リリース max</span><span>27°</span></div>
+        </div>
+
+        <div class="param-section">
+          <h4>初期状態</h4>
+          <div class="param-row"><span>腕角度</span><span>-120°</span></div>
+          <div class="param-row"><span>手首コック</span><span>45°</span></div>
+          <div class="param-row"><span>停止角度</span><span>60°</span></div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="credit">
+      Created by @da1ssk · <a href="https://github.com/da1ssk/advent2025" target="_blank">Advent Calendar 2025</a>
+    </footer>
+  </div>
+  <script type="module" src="dist/main.js"></script>
+</body>
+
+</html>

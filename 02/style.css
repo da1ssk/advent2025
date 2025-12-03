@@ -1,0 +1,207 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: #1a1a2e;
+  color: #eee;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  max-width: 1600px;
+  width: 100%;
+}
+
+h1 {
+  color: #4ade80;
+  margin: 0;
+  font-size: 2.2rem;
+}
+
+.main-layout {
+  display: grid;
+  grid-template-columns: 220px 1fr 200px;
+  gap: 15px;
+  width: 100%;
+}
+
+/* Left Panel - Controls */
+.controls-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.control-group {
+  background: #16213e;
+  padding: 15px;
+  border-radius: 12px;
+  border: 1px solid #0f3460;
+}
+
+.control-group h3 {
+  margin: 0 0 12px 0;
+  font-size: 1.1rem;
+  color: #4ade80;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+  color: #bbb;
+}
+
+input[type="range"] {
+  width: 100%;
+  margin-top: 4px;
+  accent-color: #4ade80;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #0f3460;
+  margin: 12px 0;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #4ade80 0%, #22c55e 100%);
+  color: #1a1a2e;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  font-weight: 600;
+  margin-top: 10px;
+  transition: transform 0.1s;
+}
+
+button:hover {
+  transform: scale(1.02);
+}
+
+button.secondary {
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+}
+
+#logArea {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #999;
+  min-height: 40px;
+  line-height: 1.4;
+}
+
+/* Center - Canvas */
+.canvas-container {
+  background: #16213e;
+  border-radius: 12px;
+  border: 1px solid #0f3460;
+  overflow: hidden;
+  position: relative;
+}
+
+canvas {
+  display: block;
+  background: #0a0a14;
+}
+
+#stats {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: rgba(0,0,0,0.8);
+  color: #4ade80;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.phase-control {
+  padding: 12px 15px;
+  background: #0f3460;
+}
+
+.phase-control label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
+  font-weight: 500;
+  color: #eee;
+}
+
+.phase-control input[type="range"] {
+  flex: 1;
+  margin: 0;
+}
+
+/* Right Panel - Parameters */
+.params-panel {
+  background: #16213e;
+  padding: 15px;
+  border-radius: 12px;
+  border: 1px solid #0f3460;
+  font-size: 0.75rem;
+}
+
+.params-panel h3 {
+  margin: 0 0 12px 0;
+  font-size: 1rem;
+  color: #4ade80;
+}
+
+.param-section {
+  margin-bottom: 15px;
+}
+
+.param-section h4 {
+  margin: 0 0 10px 0;
+  font-size: 1rem;
+  color: #f59e0b;
+  border-bottom: 1px solid #0f3460;
+  padding-bottom: 5px;
+}
+
+.param-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+  color: #bbb;
+  font-size: 0.95rem;
+}
+
+.param-row span:last-child {
+  color: #fff;
+  font-family: 'Monaco', 'Consolas', monospace;
+  font-size: 1rem;
+}
+
+/* Footer */
+.credit {
+  margin-top: 30px;
+  padding: 20px;
+  text-align: center;
+  color: #666;
+  font-size: 0.9rem;
+  border-top: 1px solid #0f3460;
+}
+
+.credit a {
+  color: #4ade80;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.credit a:hover {
+  text-decoration: underline;
+}
