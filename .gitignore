@@ -8,6 +8,9 @@ out/
 # Dependencies
 node_modules/
 
+# Vercel
+.vercel/
+
 # OS files
 .DS_Store
 .DS_Store?
