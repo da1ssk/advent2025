@@ -12,6 +12,7 @@
 |-----|---------|-------------|------|------|
 | 01 | [Markdownプレビューア](./01/) | TypeScript, marked, HTML/CSS | [🔗 Live](https://markdown-previewer-day01.vercel.app/) | [📝 Qiita](https://qiita.com/da1ssk/items/acd731284c829d3256ac) |
 | 02 | [ゴルフスイングシミュレーター](./02/) | TypeScript, Canvas, Lagrangian力学 | [🔗 Live](https://golf-swing-simulator-day02.vercel.app/) | [📝 Qiita](https://qiita.com/da1ssk/items/fbb9be70edfaab6d9aeb) |
+| 03 | [8-bit Grooves Maker](./03/) | TypeScript, Web Audio API, CSS Grid | [🔗 Live](https://advent2025-day03-grooves.vercel.app/) | [📝 Qiita](https://qiita.com/da1ssk/items/91155530cd2d3c356459) |
 
 ---
 
