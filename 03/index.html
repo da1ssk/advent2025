@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>8-bit Grooves Maker (MVP) - TS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>🎮 8-bit Grooves Maker</h1>
+  <p>超シンプルDTM (矩形波1chのみ)</p>
+
+  <div class="controls">
+    <label for="bpm">テンポ (BPM):</label>
+    <input type="number" id="bpm" value="180" min="60" max="300">
+    <button id="playPauseBtn">再生 / 停止</button>
+    <button id="clearBtn">クリア</button>
+    <button id="resetBtn">デフォルトに戻す</button>
+    <button id="saveBtn">保存</button>
+    <button id="loadBtn">ロード</button>
+  </div>
+
+  <div class="legend">
+    <span class="legend-label">凡例:</span>
+    <span class="legend-item"><span class="legend-box legend-staccato"></span>スタッカート（短音）</span>
+    <span class="legend-item"><span class="legend-box legend-continuous"></span>レガート（持続音）</span>
+    <span class="legend-note">※セルをクリックで切り替え</span>
+  </div>
+
+  <div class="sequencer" id="sequencer">
+  </div>
+
+  <div class="saved-items">
+    <h3>保存されたパターン:</h3>
+    <div id="savedList"></div>
+  </div>
+
+  <script type="module" src="dist/script.js"></script>
+</body>
+
+</html>

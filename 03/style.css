@@ -1,0 +1,178 @@
+body {
+    font-family: sans-serif;
+    background-color: #222;
+    color: #eee;
+    padding: 20px;
+}
+
+h1 {
+    color: #4CAF50; /* レトロゲームっぽい緑 */
+    text-align: center;
+}
+
+.controls {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.legend {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #ccc;
+}
+
+.legend-label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.legend-item {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.legend-box {
+    display: inline-block;
+    width: 20px;
+    height: 14px;
+    margin-right: 5px;
+    vertical-align: middle;
+    border: 1px solid #444;
+}
+
+.legend-staccato {
+    background-color: #FF5722;
+    border: 2px solid #000;
+}
+
+.legend-continuous {
+    background-color: #2196F3;
+    border-color: #42A5F5;
+}
+
+.legend-note {
+    margin-left: 15px;
+    font-size: 12px;
+    color: #999;
+}
+
+#playPauseBtn {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #3f51b5; /* 青 */
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+.sequencer {
+    display: grid;
+    /* grid-template-columns will be set by JS */
+    grid-auto-rows: 15px; /* 音階の高さ */
+    width: 100%; /* ブラウザ幅に合わせる */
+    overflow-x: auto; /* スクロール可能に */
+    border: 2px solid #555;
+    background-color: #333;
+    padding: 5px;
+    box-sizing: border-box; /* padding込みで100% */
+    scroll-behavior: smooth; /* スムーズスクロール */
+}
+
+
+.cell {
+    border: 1px solid #444;
+    cursor: pointer;
+    transition: background-color 0.1s;
+}
+
+/* 4ステップ（16分音符4つ）ごとに目盛りの線を太くする */
+.step-4 {
+    border-left: 2px solid #666;
+}
+
+/* 16ステップ（1小節）ごとにさらに太い線を引く */
+.step-16 {
+    border-left: 3px solid #999;
+}
+
+.note-on {
+    background-color: #FF5722; /* オレンジ/赤 - Staccato */
+    border: 2px solid #000; /* 黒枠で囲む */
+}
+
+.note-continuous {
+    background-color: #2196F3; /* 青 - Continuous/Legato */
+    border-color: #42A5F5;
+}
+
+.current-step {
+    /* 再生中の列をハイライト */
+    background-color: rgba(76, 175, 80, 0.4) !important;
+}
+
+.saved-items {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #2a2a2a;
+    border-radius: 8px;
+}
+
+.saved-items h3 {
+    color: #4CAF50;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+#savedList {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.saved-item {
+    background-color: #333;
+    padding: 10px 15px;
+    border-radius: 4px;
+    border: 1px solid #555;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.2s;
+}
+
+.saved-item:hover {
+    background-color: #3a3a3a;
+}
+
+.saved-item-info {
+    cursor: pointer;
+    flex: 1;
+}
+
+.saved-item-name {
+    font-weight: bold;
+    color: #fff;
+    margin-right: 10px;
+}
+
+.saved-item-date {
+    font-size: 12px;
+    color: #999;
+}
+
+.saved-item-delete {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.saved-item-delete:hover {
+    background-color: #d32f2f;
+}
